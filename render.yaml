@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: uptime-kuma
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 3001
+    disk:
+      name: uptime-kuma-data
+      mountPath: /app/data
+      sizeGB: 1
