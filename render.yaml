@@ -3,7 +3,7 @@ services:
     name: uptime-kuma
     env: docker
     dockerfilePath: ./Dockerfile
-    plan: starter
+    plan: free
     region: oregon
     envVars:
       - key: PORT
